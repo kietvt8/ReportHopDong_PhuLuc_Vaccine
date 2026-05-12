@@ -108,6 +108,40 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 
 	private XRRichText xrRichText1;
 
+	// Section header: STT | NỘI DUNG
+	private XRTable xrTable6;
+	private XRTableRow xrTableRow6;
+	private XRTableCell xrTableCell17;
+	private XRTableCell xrTableCell18;
+
+	// Section I: I | Gói Vắc xin
+	private XRTable xrTable7;
+	private XRTableRow xrTableRow7;
+	private XRTableCell xrTableCell19;
+	private XRTableCell xrTableCell20;
+
+	// Section II: II | Gói dịch vụ tại Khu vực VIP
+	private XRTable xrTable8;
+	private XRTableRow xrTableRow8;
+	private XRTableCell xrTableCell21;
+	private XRTableCell xrTableCell22;
+
+	// VIP service header row
+	private XRTable xrTable9;
+	private XRTableRow xrTableRow9;
+	private XRTableCell xrTableCell23;
+	private XRTableCell xrTableCell24;
+	private XRTableCell xrTableCell25;
+	private XRTableCell xrTableCell26;
+
+	// VIP service data row
+	private XRTable xrTable10;
+	private XRTableRow xrTableRow10;
+	private XRTableCell xrTableCell27;
+	private XRTableCell xrTableCell28;
+	private XRTableCell xrTableCell29;
+	private XRTableCell xrTableCell30;
+
 	public rptPhuLucNoiDungGoiVaccineVNVC()
 	{
 		InitializeComponent();
@@ -366,11 +400,40 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		rep_PhuLucHopDongVaccineV21 = new rep_PhuLucHopDongVaccineV2();
 		ReportHeader = new ReportHeaderBand();
 		xrRichText1 = new XRRichText();
+		xrTable6 = new XRTable();
+		xrTableRow6 = new XRTableRow();
+		xrTableCell17 = new XRTableCell();
+		xrTableCell18 = new XRTableCell();
+		xrTable7 = new XRTable();
+		xrTableRow7 = new XRTableRow();
+		xrTableCell19 = new XRTableCell();
+		xrTableCell20 = new XRTableCell();
+		xrTable8 = new XRTable();
+		xrTableRow8 = new XRTableRow();
+		xrTableCell21 = new XRTableCell();
+		xrTableCell22 = new XRTableCell();
+		xrTable9 = new XRTable();
+		xrTableRow9 = new XRTableRow();
+		xrTableCell23 = new XRTableCell();
+		xrTableCell24 = new XRTableCell();
+		xrTableCell25 = new XRTableCell();
+		xrTableCell26 = new XRTableCell();
+		xrTable10 = new XRTable();
+		xrTableRow10 = new XRTableRow();
+		xrTableCell27 = new XRTableCell();
+		xrTableCell28 = new XRTableCell();
+		xrTableCell29 = new XRTableCell();
+		xrTableCell30 = new XRTableCell();
 		((ISupportInitialize)xrTable2).BeginInit();
 		((ISupportInitialize)xrTable1).BeginInit();
 		((ISupportInitialize)xrTable5).BeginInit();
 		((ISupportInitialize)xrTable4).BeginInit();
 		((ISupportInitialize)xrTable3).BeginInit();
+		((ISupportInitialize)xrTable6).BeginInit();
+		((ISupportInitialize)xrTable7).BeginInit();
+		((ISupportInitialize)xrTable8).BeginInit();
+		((ISupportInitialize)xrTable9).BeginInit();
+		((ISupportInitialize)xrTable10).BeginInit();
 		((ISupportInitialize)rep_PhuLucHopDongVaccineV21).BeginInit();
 		((ISupportInitialize)xrRichText1).BeginInit();
 		((ISupportInitialize)this).BeginInit();
@@ -468,11 +531,13 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)BottomMargin).Name = "BottomMargin";
 		((XRControl)BottomMargin).Padding = new PaddingInfo(0, 0, 0, 0, 100f);
 		((XRControl)BottomMargin).TextAlignment = (TextAlignment)1;
-		((XRControl)PageHeader).Controls.AddRange((XRControl[])(object)new XRControl[8]
+		((XRControl)PageHeader).Controls.AddRange((XRControl[])(object)new XRControl[10]
 		{
 			(XRControl)xrLabel8,
 			(XRControl)xrLabel7,
 			(XRControl)xrLabel6,
+			(XRControl)xrTable6,
+			(XRControl)xrTable7,
 			(XRControl)xrTable1,
 			(XRControl)xrLabel5,
 			(XRControl)xrLabel4,
@@ -480,7 +545,7 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 			(XRControl)xrLabel2
 		});
 		((XRControl)PageHeader).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
-		((XRControl)PageHeader).HeightF = 113.4166f;
+		((XRControl)PageHeader).HeightF = 163.4166f;
 		((XRControl)PageHeader).Name = "PageHeader";
 		((XRControl)PageHeader).StylePriority.UseFont = false;
 		((XRControl)xrLabel8).BorderColor = Color.Black;
@@ -527,7 +592,7 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrLabel6).Text = "xrLabel6";
 		((XRControl)xrLabel6).TextAlignment = (TextAlignment)32;
 		((XRControl)xrTable1).Borders = (BorderSide)7;
-		((XRControl)xrTable1).LocationFloat = new PointFloat(22.83331f, 88.41658f);
+		((XRControl)xrTable1).LocationFloat = new PointFloat(22.83331f, 138.41658f);
 		((XRControl)xrTable1).Name = "xrTable1";
 		xrTable1.Rows.AddRange((XRTableRow[])(object)new XRTableRow[1] { xrTableRow1 });
 		((XRControl)xrTable1).SizeF = new SizeF(754.1667f, 25f);
@@ -550,7 +615,7 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrTableCell9).Text = "Nước sản xuất";
 		xrTableCell9.Weight = 0.9864102173875747;
 		((XRControl)xrTableCell4).Name = "xrTableCell4";
-		((XRControl)xrTableCell4).Text = "Số Lượng";
+		((XRControl)xrTableCell4).Text = "Số lượng (liều)";
 		xrTableCell4.Weight = 1.0565878362315648;
 		((XRControl)xrLabel5).DataBindings.AddRange((XRBinding[])(object)new XRBinding[1]
 		{
@@ -600,16 +665,19 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrLabel2).Text = "CỦA KHÁCH HÀNG:";
 		((XRControl)xrLabel2).TextAlignment = (TextAlignment)16;
 		((XRControl)xrLabel2).Visible = false;
-		((XRControl)GroupFooter1).Controls.AddRange((XRControl[])(object)new XRControl[3]
+		((XRControl)GroupFooter1).Controls.AddRange((XRControl[])(object)new XRControl[6]
 		{
 			(XRControl)xrTable5,
 			(XRControl)xrTable4,
-			(XRControl)xrTable3
+			(XRControl)xrTable3,
+			(XRControl)xrTable8,
+			(XRControl)xrTable9,
+			(XRControl)xrTable10
 		});
-		((XRControl)GroupFooter1).HeightF = 91.66666f;
+		((XRControl)GroupFooter1).HeightF = 175f;
 		((XRControl)GroupFooter1).Name = "GroupFooter1";
 		((XRControl)xrTable5).Borders = (BorderSide)13;
-		((XRControl)xrTable5).LocationFloat = new PointFloat(22.83328f, 50f);
+		((XRControl)xrTable5).LocationFloat = new PointFloat(22.83328f, 125f);
 		((XRControl)xrTable5).Name = "xrTable5";
 		xrTable5.Rows.AddRange((XRTableRow[])(object)new XRTableRow[1] { xrTableRow5 });
 		((XRControl)xrTable5).SizeF = new SizeF(754.1667f, 25f);
@@ -640,7 +708,7 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrTableCell16).TextAlignment = (TextAlignment)64;
 		xrTableCell16.Weight = 1.0565887450146842;
 		((XRControl)xrTable4).Borders = (BorderSide)13;
-		((XRControl)xrTable4).LocationFloat = new PointFloat(22.83331f, 25f);
+		((XRControl)xrTable4).LocationFloat = new PointFloat(22.83331f, 100f);
 		((XRControl)xrTable4).Name = "xrTable4";
 		xrTable4.Rows.AddRange((XRTableRow[])(object)new XRTableRow[1] { xrTableRow4 });
 		((XRControl)xrTable4).SizeF = new SizeF(754.1667f, 25f);
@@ -653,7 +721,7 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrTableCell13).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
 		((XRControl)xrTableCell13).Name = "xrTableCell13";
 		((XRControl)xrTableCell13).StylePriority.UseFont = false;
-		((XRControl)xrTableCell13).Text = "Giá gói (VNĐ)";
+		((XRControl)xrTableCell13).Text = "Tổng giá trị Phụ lục";
 		xrTableCell13.Weight = 4.557994690043909;
 		((XRControl)xrTableCell14).DataBindings.AddRange((XRBinding[])(object)new XRBinding[1]
 		{
@@ -684,7 +752,7 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrTableCell11).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
 		((XRControl)xrTableCell11).Name = "xrTableCell11";
 		((XRControl)xrTableCell11).StylePriority.UseFont = false;
-		((XRControl)xrTableCell11).Text = "Tổng số (liều)";
+		((XRControl)xrTableCell11).Text = "Tổng số (liều):";
 		xrTableCell11.Weight = 4.55799423565235;
 		((XRControl)xrTableCell12).DataBindings.AddRange((XRBinding[])(object)new XRBinding[1]
 		{
@@ -699,6 +767,146 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrTableCell12).Text = "xrTableCell12";
 		((XRControl)xrTableCell12).TextAlignment = (TextAlignment)32;
 		xrTableCell12.Weight = 1.0565891994062442;
+		//
+		// xrTable6 - STT | NỘI DUNG (PageHeader)
+		//
+		((XRControl)xrTable6).Borders = (BorderSide)15;
+		((XRControl)xrTable6).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
+		((XRControl)xrTable6).LocationFloat = new PointFloat(22.83331f, 88.41658f);
+		((XRControl)xrTable6).Name = "xrTable6";
+		xrTable6.Rows.AddRange((XRTableRow[])(object)new XRTableRow[1] { xrTableRow6 });
+		((XRControl)xrTable6).SizeF = new SizeF(754.1667f, 25f);
+		((XRControl)xrTable6).StylePriority.UseBorders = false;
+		((XRControl)xrTable6).StylePriority.UseFont = false;
+		((XRControl)xrTable6).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTable6).TextAlignment = (TextAlignment)32;
+		xrTableRow6.Cells.AddRange((XRTableCell[])(object)new XRTableCell[2] { xrTableCell17, xrTableCell18 });
+		((XRControl)xrTableRow6).Name = "xrTableRow6";
+		xrTableRow6.Weight = 1.0;
+		((XRControl)xrTableCell17).Name = "xrTableCell17";
+		((XRControl)xrTableCell17).Text = "STT";
+		xrTableCell17.Weight = 0.4106238163423236;
+		((XRControl)xrTableCell18).Name = "xrTableCell18";
+		((XRControl)xrTableCell18).Text = "NỘI DUNG";
+		xrTableCell18.Weight = 5.2035596187162704;
+		//
+		// xrTable7 - I | Gói Vắc xin (PageHeader)
+		//
+		((XRControl)xrTable7).Borders = (BorderSide)7;
+		((XRControl)xrTable7).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
+		((XRControl)xrTable7).LocationFloat = new PointFloat(22.83331f, 113.41658f);
+		((XRControl)xrTable7).Name = "xrTable7";
+		xrTable7.Rows.AddRange((XRTableRow[])(object)new XRTableRow[1] { xrTableRow7 });
+		((XRControl)xrTable7).SizeF = new SizeF(754.1667f, 25f);
+		((XRControl)xrTable7).StylePriority.UseBorders = false;
+		((XRControl)xrTable7).StylePriority.UseFont = false;
+		((XRControl)xrTable7).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTable7).TextAlignment = (TextAlignment)32;
+		xrTableRow7.Cells.AddRange((XRTableCell[])(object)new XRTableCell[2] { xrTableCell19, xrTableCell20 });
+		((XRControl)xrTableRow7).Name = "xrTableRow7";
+		xrTableRow7.Weight = 1.0;
+		((XRControl)xrTableCell19).Name = "xrTableCell19";
+		((XRControl)xrTableCell19).Text = "I";
+		((XRControl)xrTableCell19).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTableCell19).TextAlignment = (TextAlignment)32;
+		xrTableCell19.Weight = 0.4106238163423236;
+		((XRControl)xrTableCell20).Name = "xrTableCell20";
+		((XRControl)xrTableCell20).Text = "Gói Vắc xin";
+		((XRControl)xrTableCell20).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTableCell20).TextAlignment = (TextAlignment)32;
+		xrTableCell20.Weight = 5.2035596187162704;
+		//
+		// xrTable8 - II | Gói dịch vụ tại Khu vực VIP (GroupFooter)
+		//
+		((XRControl)xrTable8).Borders = (BorderSide)7;
+		((XRControl)xrTable8).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
+		((XRControl)xrTable8).LocationFloat = new PointFloat(22.83331f, 25f);
+		((XRControl)xrTable8).Name = "xrTable8";
+		xrTable8.Rows.AddRange((XRTableRow[])(object)new XRTableRow[1] { xrTableRow8 });
+		((XRControl)xrTable8).SizeF = new SizeF(754.1667f, 25f);
+		((XRControl)xrTable8).StylePriority.UseBorders = false;
+		((XRControl)xrTable8).StylePriority.UseFont = false;
+		((XRControl)xrTable8).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTable8).TextAlignment = (TextAlignment)32;
+		xrTableRow8.Cells.AddRange((XRTableCell[])(object)new XRTableCell[2] { xrTableCell21, xrTableCell22 });
+		((XRControl)xrTableRow8).Name = "xrTableRow8";
+		xrTableRow8.Weight = 1.0;
+		((XRControl)xrTableCell21).Name = "xrTableCell21";
+		((XRControl)xrTableCell21).Text = "II";
+		((XRControl)xrTableCell21).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTableCell21).TextAlignment = (TextAlignment)32;
+		xrTableCell21.Weight = 0.4106238163423236;
+		((XRControl)xrTableCell22).Name = "xrTableCell22";
+		((XRControl)xrTableCell22).Text = "Gói dịch vụ tại Khu vực VIP";
+		((XRControl)xrTableCell22).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTableCell22).TextAlignment = (TextAlignment)32;
+		xrTableCell22.Weight = 5.2035596187162704;
+		//
+		// xrTable9 - VIP header (GroupFooter)
+		//
+		((XRControl)xrTable9).Borders = (BorderSide)7;
+		((XRControl)xrTable9).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
+		((XRControl)xrTable9).LocationFloat = new PointFloat(22.83331f, 50f);
+		((XRControl)xrTable9).Name = "xrTable9";
+		xrTable9.Rows.AddRange((XRTableRow[])(object)new XRTableRow[1] { xrTableRow9 });
+		((XRControl)xrTable9).SizeF = new SizeF(754.1667f, 25f);
+		((XRControl)xrTable9).StylePriority.UseBorders = false;
+		((XRControl)xrTable9).StylePriority.UseFont = false;
+		((XRControl)xrTable9).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTable9).TextAlignment = (TextAlignment)32;
+		xrTableRow9.Cells.AddRange((XRTableCell[])(object)new XRTableCell[4] { xrTableCell23, xrTableCell24, xrTableCell25, xrTableCell26 });
+		((XRControl)xrTableRow9).Name = "xrTableRow9";
+		xrTableRow9.Weight = 1.0;
+		((XRControl)xrTableCell23).Name = "xrTableCell23";
+		((XRControl)xrTableCell23).Text = "";
+		xrTableCell23.Weight = 0.4106238163423236;
+		((XRControl)xrTableCell24).Name = "xrTableCell24";
+		((XRControl)xrTableCell24).Text = "Dịch vụ";
+		xrTableCell24.Weight = 3.1609615650971310;
+		((XRControl)xrTableCell25).Name = "xrTableCell25";
+		((XRControl)xrTableCell25).Text = "Đơn vị tính";
+		xrTableCell25.Weight = 0.9864102173875747;
+		((XRControl)xrTableCell26).Name = "xrTableCell26";
+		((XRControl)xrTableCell26).Text = "Số lượng";
+		xrTableCell26.Weight = 1.0565878362315648;
+		//
+		// xrTable10 - VIP data row (GroupFooter)
+		//
+		((XRControl)xrTable10).Borders = (BorderSide)7;
+		((XRControl)xrTable10).Font = new Font("Times New Roman", 12f, FontStyle.Regular, GraphicsUnit.Point, 0);
+		((XRControl)xrTable10).LocationFloat = new PointFloat(22.83331f, 75f);
+		((XRControl)xrTable10).Name = "xrTable10";
+		xrTable10.Rows.AddRange((XRTableRow[])(object)new XRTableRow[1] { xrTableRow10 });
+		((XRControl)xrTable10).SizeF = new SizeF(754.1667f, 25f);
+		((XRControl)xrTable10).StylePriority.UseBorders = false;
+		((XRControl)xrTable10).StylePriority.UseFont = false;
+		((XRControl)xrTable10).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTable10).TextAlignment = (TextAlignment)16;
+		xrTableRow10.Cells.AddRange((XRTableCell[])(object)new XRTableCell[4] { xrTableCell27, xrTableCell28, xrTableCell29, xrTableCell30 });
+		((XRControl)xrTableRow10).Name = "xrTableRow10";
+		xrTableRow10.Weight = 1.0;
+		((XRControl)xrTableCell27).Name = "xrTableCell27";
+		((XRControl)xrTableCell27).Text = "1";
+		((XRControl)xrTableCell27).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTableCell27).TextAlignment = (TextAlignment)32;
+		xrTableCell27.Weight = 0.4106238163423236;
+		((XRControl)xrTableCell28).Name = "xrTableCell28";
+		((XRControl)xrTableCell28).Text = "Sử dụng dịch vụ tại khu vực VIP";
+		((XRControl)xrTableCell28).Padding = new PaddingInfo(5, 2, 2, 2, 100f);
+		((XRControl)xrTableCell28).StylePriority.UsePadding = false;
+		((XRControl)xrTableCell28).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTableCell28).TextAlignment = (TextAlignment)16;
+		xrTableCell28.Weight = 3.1609615650971310;
+		((XRControl)xrTableCell29).Name = "xrTableCell29";
+		((XRControl)xrTableCell29).Text = "Lần";
+		((XRControl)xrTableCell29).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTableCell29).TextAlignment = (TextAlignment)32;
+		xrTableCell29.Weight = 0.9864102173875747;
+		((XRControl)xrTableCell30).Name = "xrTableCell30";
+		((XRControl)xrTableCell30).Text = "xrTableCell30";
+		((XRControl)xrTableCell30).StylePriority.UseTextAlignment = false;
+		((XRControl)xrTableCell30).TextAlignment = (TextAlignment)32;
+		xrTableCell30.Weight = 1.0565878362315648;
 		((XRControl)PageFooter).Controls.AddRange((XRControl[])(object)new XRControl[2]
 		{
 			(XRControl)xrLabel27,
@@ -763,6 +971,11 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((ISupportInitialize)xrTable5).EndInit();
 		((ISupportInitialize)xrTable4).EndInit();
 		((ISupportInitialize)xrTable3).EndInit();
+		((ISupportInitialize)xrTable6).EndInit();
+		((ISupportInitialize)xrTable7).EndInit();
+		((ISupportInitialize)xrTable8).EndInit();
+		((ISupportInitialize)xrTable9).EndInit();
+		((ISupportInitialize)xrTable10).EndInit();
 		((ISupportInitialize)rep_PhuLucHopDongVaccineV21).EndInit();
 		((ISupportInitialize)xrRichText1).EndInit();
 		((ISupportInitialize)this).EndInit();
