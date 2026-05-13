@@ -684,19 +684,19 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrTable5).StylePriority.UseBorders = false;
 		((XRControl)xrTable5).StylePriority.UseTextAlignment = false;
 		((XRControl)xrTable5).TextAlignment = (TextAlignment)32;
-		xrTableRow5.Cells.AddRange((XRTableCell[])(object)new XRTableCell[2] { xrTableCell15, xrTableCell16 });
+		xrTableRow5.Cells.AddRange((XRTableCell[])(object)new XRTableCell[1] { xrTableCell15 });
 		((XRControl)xrTableRow5).Name = "xrTableRow5";
 		xrTableRow5.Weight = 1.0;
 		((XRControl)xrTableCell15).Controls.AddRange((XRControl[])(object)new XRControl[1] { (XRControl)xrRichText1 });
 		((XRControl)xrTableCell15).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
 		((XRControl)xrTableCell15).Name = "xrTableCell15";
-		((XRControl)xrTableCell15).Padding = new PaddingInfo(10, 0, 0, 0, 100f);
+		((XRControl)xrTableCell15).Padding = new PaddingInfo(10, 10, 0, 0, 100f);
 		((XRControl)xrTableCell15).StylePriority.UseFont = false;
 		((XRControl)xrTableCell15).StylePriority.UsePadding = false;
 		((XRControl)xrTableCell15).StylePriority.UseTextAlignment = false;
 		((XRControl)xrTableCell15).Text = "xrTableCell15";
 		((XRControl)xrTableCell15).TextAlignment = (TextAlignment)16;
-		xrTableCell15.Weight = 4.557994690043909;
+		xrTableCell15.Weight = 5.614583435058593;
 		((XRControl)xrTableCell16).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
 		((XRControl)xrTableCell16).Name = "xrTableCell16";
 		((XRControl)xrTableCell16).Padding = new PaddingInfo(3, 3, 3, 3, 100f);
@@ -707,7 +707,7 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRLabel)xrTableCell16).Summary = val2;
 		((XRControl)xrTableCell16).TextAlignment = (TextAlignment)64;
 		xrTableCell16.Weight = 1.0565887450146842;
-		((XRControl)xrTable4).Borders = (BorderSide)13;
+		((XRControl)xrTable4).Borders = (BorderSide)15;
 		((XRControl)xrTable4).LocationFloat = new PointFloat(22.83331f, 100f);
 		((XRControl)xrTable4).Name = "xrTable4";
 		xrTable4.Rows.AddRange((XRTableRow[])(object)new XRTableRow[1] { xrTableRow4 });
@@ -718,8 +718,10 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		xrTableRow4.Cells.AddRange((XRTableCell[])(object)new XRTableCell[2] { xrTableCell13, xrTableCell14 });
 		((XRControl)xrTableRow4).Name = "xrTableRow4";
 		xrTableRow4.Weight = 1.0;
+		((XRControl)xrTableCell13).Borders = (BorderSide)11;
 		((XRControl)xrTableCell13).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
 		((XRControl)xrTableCell13).Name = "xrTableCell13";
+		((XRControl)xrTableCell13).StylePriority.UseBorders = false;
 		((XRControl)xrTableCell13).StylePriority.UseFont = false;
 		((XRControl)xrTableCell13).Text = "Tổng giá trị Phụ lục";
 		xrTableCell13.Weight = 4.557994690043909;
@@ -727,9 +729,11 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		{
 			new XRBinding("Text", (object)null, "Table2.TongTien", "{0:n0} VNĐ")
 		});
+		((XRControl)xrTableCell14).Borders = (BorderSide)14;
 		((XRControl)xrTableCell14).Font = new Font("Times New Roman", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
 		((XRControl)xrTableCell14).Name = "xrTableCell14";
 		((XRControl)xrTableCell14).Padding = new PaddingInfo(3, 3, 3, 3, 100f);
+		((XRControl)xrTableCell14).StylePriority.UseBorders = false;
 		((XRControl)xrTableCell14).StylePriority.UseFont = false;
 		((XRControl)xrTableCell14).StylePriority.UsePadding = false;
 		((XRControl)xrTableCell14).StylePriority.UseTextAlignment = false;
@@ -947,7 +951,7 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrRichText1).LocationFloat = new PointFloat(2.670288E-05f, 0f);
 		((XRControl)xrRichText1).Name = "xrRichText1";
 		((XRRichTextBase)xrRichText1).SerializableRtfString = componentResourceManager.GetString("xrRichText1.SerializableRtfString");
-		((XRControl)xrRichText1).SizeF = new SizeF(612.2426f, 25f);
+		((XRControl)xrRichText1).SizeF = new SizeF(754.1667f, 25f);
 		((XtraReportBase)this).Bands.AddRange((Band[])(object)new Band[7]
 		{
 			(Band)Detail,
