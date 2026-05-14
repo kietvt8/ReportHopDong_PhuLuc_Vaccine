@@ -156,6 +156,20 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		DataSetExtensions.ApplyDataSet((DataSet)rep_PhuLucHopDongVaccineV3, ds);
 		dset = rep_PhuLucHopDongVaccineV3;
 		((XtraReportBase)this).DataSource = rep_PhuLucHopDongVaccineV3;
+		// Set VipSoLuong directly from incoming ds
+		bool foundVipSL = false;
+		for (int i = 0; i < ds.Tables.Count; i++)
+		{
+			if (ds.Tables[i].Columns.Contains("VipSoLuong") && ds.Tables[i].Rows.Count > 0)
+			{
+				object val = ds.Tables[i].Rows[0]["VipSoLuong"];
+				((XRControl)xrTableCell30).Text = (val != DBNull.Value) ? Convert.ToString(val) : "DBNull";
+				foundVipSL = true;
+				break;
+			}
+		}
+		if (!foundVipSL)
+			((XRControl)xrTableCell30).Text = "NOT_IN_DS(" + ds.Tables.Count + ")";
 		MemoryStream memoryStream = new MemoryStream();
 		if (type.ToUpper() == "PDF")
 		{
@@ -907,7 +921,6 @@ public class rptPhuLucNoiDungGoiVaccineVNVC : XtraReport, IReport
 		((XRControl)xrTableCell29).TextAlignment = (TextAlignment)32;
 		xrTableCell29.Weight = 0.9864102173875747;
 		((XRControl)xrTableCell30).Name = "xrTableCell30";
-		((XRControl)xrTableCell30).Text = "xrTableCell30";
 		((XRControl)xrTableCell30).StylePriority.UseTextAlignment = false;
 		((XRControl)xrTableCell30).TextAlignment = (TextAlignment)32;
 		xrTableCell30.Weight = 1.0565878362315648;

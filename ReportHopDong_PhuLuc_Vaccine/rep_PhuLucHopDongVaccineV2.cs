@@ -434,6 +434,8 @@ public class rep_PhuLucHopDongVaccineV2 : DataSet
 
 		private DataColumn columnNewContractName;
 
+		private DataColumn columnVipSoLuong;
+
 		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
 		[DebuggerNonUserCode]
 		public DataColumn TenGoiColumn => columnTenGoi;
@@ -461,6 +463,10 @@ public class rep_PhuLucHopDongVaccineV2 : DataSet
 		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
 		[DebuggerNonUserCode]
 		public DataColumn NewContractNameColumn => columnNewContractName;
+
+		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+		[DebuggerNonUserCode]
+		public DataColumn VipSoLuongColumn => columnVipSoLuong;
 
 		[DebuggerNonUserCode]
 		[Browsable(false)]
@@ -563,10 +569,10 @@ public class rep_PhuLucHopDongVaccineV2 : DataSet
 			columnTenGoi = base.Columns["TenGoi"];
 			columnTongSL = base.Columns["TongSL"];
 			columnTongTien = base.Columns["TongTien"];
+			columnVipSoLuong = base.Columns["VipSoLuong"];
 			columnTitle = base.Columns["Title"];
 			columnTitle2 = base.Columns["Title2"];
 			columnThoiHanGoi = base.Columns["ThoiHanGoi"];
-			columnNewContractName = base.Columns["NewContractName"];
 		}
 
 		[DebuggerNonUserCode]
@@ -579,14 +585,14 @@ public class rep_PhuLucHopDongVaccineV2 : DataSet
 			base.Columns.Add(columnTongSL);
 			columnTongTien = new DataColumn("TongTien", typeof(decimal), null, MappingType.Element);
 			base.Columns.Add(columnTongTien);
+			columnVipSoLuong = new DataColumn("VipSoLuong", typeof(int), null, MappingType.Element);
+			base.Columns.Add(columnVipSoLuong);
 			columnTitle = new DataColumn("Title", typeof(string), null, MappingType.Element);
 			base.Columns.Add(columnTitle);
 			columnTitle2 = new DataColumn("Title2", typeof(string), null, MappingType.Element);
 			base.Columns.Add(columnTitle2);
 			columnThoiHanGoi = new DataColumn("ThoiHanGoi", typeof(string), null, MappingType.Element);
 			base.Columns.Add(columnThoiHanGoi);
-			columnNewContractName = new DataColumn("NewContractName", typeof(string), null, MappingType.Element);
-			base.Columns.Add(columnNewContractName);
 		}
 
 		[DebuggerNonUserCode]
